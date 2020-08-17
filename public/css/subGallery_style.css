@@ -1,0 +1,7 @@
+.video,
+.img {
+    position: relative;
+    height: 90vh;
+    transform: translate(-50%, 0);
+    left: 50%;
+}

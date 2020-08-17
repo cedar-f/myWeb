@@ -1,0 +1,10 @@
+extends ../common/common
+
+block linkOrScript
+    link(rel="stylesheet", href="/css/subGallery_style.css")
+
+block content
+    if video
+        video.video(src=video controls)
+    if image
+        img.img(src=image, alt="")

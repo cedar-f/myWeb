@@ -1,0 +1,29 @@
+.content-title {
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-add-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-del-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.modal-row {
+    margin-top: 2%;
+}
+
+.modal-label {
+    width: 20%;
+    display: inline-flex;
+}
+
+.modal-input {
+    margin: 0px;
+    width: 80%;
+    display: inline-block;
+}

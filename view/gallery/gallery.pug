@@ -1,0 +1,45 @@
+extends ../common/common
+
+block linkOrScript
+    script(src="/js/gallery_script.js")
+    link(rel="stylesheet", href="/css/style_gallery.css")
+
+block content
+    .row
+        .col-md-2.folder-col
+            if folders
+                p.text-md-center Folder
+                hr
+                if folders.length>0
+                    each folder in folders
+                        .folder-link= folder
+                else
+                    p.text-md-center no folder was found
+
+
+        .col-md-10.img-col
+            if img_rows
+                p.text-md-center Images
+                if img_rows.length>0
+                    each imgrow in img_rows
+                        .row
+                            each img in imgrow
+                                .col-md-3.content-col
+                                    .img-div
+                                        a.img-link(href=img,target="_blank")
+                                            img.rounded(src=img)
+                else
+                    p.text-md-center no image was found
+            hr
+            if video_rows
+                p.text-md-center Videos
+                if video_rows.length>0
+                    each videorow in video_rows
+                        .row
+                            each video in videorow
+                                .col-md-3.content-col
+                                    .video-div
+                                        a.video-link(href=video,target="_blank")
+                                            video(src=video)
+                else
+                    p.text-md-center no video was found

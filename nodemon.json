@@ -1,0 +1,3 @@
+{
+    "ignore": ["tumlum.json", "/model/db.json", "/model/account.json"]
+}

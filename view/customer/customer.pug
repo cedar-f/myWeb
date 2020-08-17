@@ -1,0 +1,59 @@
+extends ../common/common
+block linkOrScript
+    link(rel='stylesheet', type='text/css', href='/css/style_customer.css')
+    script(src="/js/customer_script.js")
+
+block content
+    h1.content-title Customer
+    table.table.table-hover
+        thead
+            tr
+            th Name
+            th Date
+            th Phone
+            th Email
+            th
+        tbody
+            each customer in customers
+                tr(class='data-row' id=customer.id) 
+                    td= customer.name
+                    td= customer.date
+                    td= customer.phone
+                    td= customer.email
+                    td
+                        button(class='btn btn-danger btn-del') 
+                            span(class='btn-del-title') - Delete
+
+    button(class='btn btn-success btn-add', type='button',data-toggle='modal',data-target='#myModal') 
+        span(class='btn-add-title') + Create new
+
+
+
+    #myModal.modal
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    h4.modal-title Add new customer
+                    button.close(type='button', data-dismiss='modal') ×
+
+                .modal-body
+                    .modal-row
+                        .modal-label ID: 
+                        input.modal-input.id(type="text")
+                    .modal-row
+                        .modal-label Name: 
+                        input.modal-input.name(type="text")
+                    .modal-row
+                        .modal-label Date: 
+                        input.modal-input.date(type="text")
+                    .modal-row
+                        .modal-label Phone: 
+                        input.modal-input.phone(type="text")
+                    .modal-row
+                        .modal-label Email: 
+                        input.modal-input.email(type="text")
+
+                .modal-footer
+                    button.btn.btn-success.btn-create(type='button', data-dismiss='modal') create
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+

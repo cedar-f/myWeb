@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-size: 30px;
+}
+
+.my_container {
+    position: absolute;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+}
+
+.header {
+    position: relative;
+    background-image: url("../img/bear_brown_timber_recreation_104783_1680x1050.jpg");
+    height: 100vh;
+    background-position: center;
+    width: 100%;
+}
+
+.header_gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    background-image: linear-gradient(-90deg, #f2f2f2, #4dc3ff);
+
+}
+
+.header_gradient_title {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    opacity: 100%;
+    text-shadow: 1px 2px 5px black;
+    text-transform: uppercase;
+}
+
+.menu_main {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 91%;
+    transform: translate(0, -100%);
+    z-index: 10;
+}
+
+.user_lbl {
+    background-color: black;
+    border: none;
+    color: lavender;
+    font-weight: bold;
+}
+
+.btn-logout {
+    color: lavender;
+    border-color: lavender;
+}
+
+.btn-logout:hover {
+    color: red;
+    border-color: red;
+}
+
+.bg_menu {
+    position: absolute;
+    background-color: black !important;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid black;
+    opacity: 70%;
+    border-top: 2px solid red;
+}
+
+.menu_main>nav {
+    position: relative;
+    font-size: 25px;
+    height: 100%;
+}
+
+nav#main>ul>li>a {
+    padding: 5px;
+    color: lightblue;
+    font-weight: bold;
+
+}
+
+nav#main>ul {
+    width: 100%;
+    display: block;
+
+}
+
+nav#main>ul>li {
+    float: left !important;
+
+}
+
+.nav-item {
+    width: 80px;
+}
+
+
+.body {
+    position: relative;
+
+    font-size: 25px;
+    padding: 7% 2% 7% 2%;
+}
+
+.bg_body {
+    position: absolute;
+    background-image: linear-gradient(-90deg, #f2f2f2, #4dc3ff);
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+    margin: 0;
+}
+
+
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #4dc3ff;
+}

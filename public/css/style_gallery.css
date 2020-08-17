@@ -1,0 +1,31 @@
+a {
+    display: block;
+
+}
+
+.content-col {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.img-div {
+    padding: 5px 5px 5px 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.video-div {
+    padding: 5px 5px 5px 5px;
+}
+
+video {
+    width: 100%;
+}
+
+.folder-link {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+}
