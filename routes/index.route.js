@@ -23,12 +23,15 @@ app.get('/logout', controller.logout);
 app.get('/', requireAuth.requireAuth, controller.index);
 
 
+
 app.use(express.static('./public'));
 app.use('/auth', auth_route);
 app.use('/customer', requireAuth.requireAuth, customer_route);
 app.use('/gallery', requireAuth.requireAuth, gallery_route);
 
-
+app.use(function (req, res) {
+    res.render('./404/404page.pug');
+});
 
 app.listen(port, () => {
     console.log('app listening at localhost ' + port);
