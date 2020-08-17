@@ -30,7 +30,7 @@ app.use('/customer', requireAuth.requireAuth, customer_route);
 app.use('/gallery', requireAuth.requireAuth, gallery_route);
 
 app.use(function (req, res) {
-    res.render('./404/404page.pug');
+    res.status(404).render('./404/404page.pug');
 });
 
 app.listen(port, () => {
